@@ -1,0 +1,35 @@
+.emblem-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 30px #00d4ff11;
+}
+
+.panel-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.emblem-display {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.emblem-svg {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(0 0 16px var(--accent-glow));
+}
+
+.emblem-desc {
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}

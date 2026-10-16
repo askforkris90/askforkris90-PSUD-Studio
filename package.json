@@ -1,0 +1,31 @@
+{
+  "name": "psud-studio",
+  "version": "1.0.0",
+  "description": "PSUD Studio - Build Games Without Limits. A complete game development environment powered by the PSUD Engine and Scrollforge IDE.",
+  "private": true,
+  "workspaces": [
+    "desktop",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=desktop",
+    "build": "npm run build --workspace=desktop",
+    "start": "npm run start --workspace=desktop",
+    "electron:dev": "npm run electron:dev --workspace=desktop",
+    "package": "npm run package --workspace=desktop"
+  },
+  "keywords": [
+    "game-engine",
+    "game-development",
+    "electron",
+    "react",
+    "typescript",
+    "psud",
+    "scrollforge"
+  ],
+  "author": "PSUD Studio Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

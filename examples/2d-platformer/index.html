@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PSUD Studio — 2D Platformer Example</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="ui">
+    <div class="hud">
+      <div class="logo">PSUD <span>2D PLATFORMER</span></div>
+      <div class="stats">
+        <span id="score">Score: 0</span>
+        <span id="coins">Coins: 0</span>
+        <span id="lives">Lives: 3</span>
+      </div>
+    </div>
+    <canvas id="game" width="960" height="540"></canvas>
+    <div id="overlay" class="overlay">
+      <div class="panel">
+        <h1>2D Platformer</h1>
+        <p>A complete example project built with the PSUD Engine concepts.</p>
+        <div class="controls">
+          <div><kbd>A</kbd> / <kbd>←</kbd> Move Left</div>
+          <div><kbd>D</kbd> / <kbd>→</kbd> Move Right</div>
+          <div><kbd>W</kbd> / <kbd>↑</kbd> / <kbd>Space</kbd> Jump</div>
+          <div><kbd>R</kbd> Restart</div>
+        </div>
+        <button id="startBtn">Play</button>
+      </div>
+    </div>
+    <div id="gameover" class="overlay hidden">
+      <div class="panel">
+        <h1 id="endTitle">Game Over</h1>
+        <p id="endScore">Score: 0</p>
+        <button id="restartBtn">Play Again</button>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

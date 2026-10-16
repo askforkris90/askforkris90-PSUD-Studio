@@ -1,0 +1,88 @@
+.project-structure {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 0;
+  box-shadow: 0 0 30px #00d4ff11;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(90deg, #0d1a30, transparent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.panel-sub {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.tree-container {
+  flex: 1;
+  overflow: auto;
+  padding: 10px 0 16px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.tree-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 12px 3px 0;
+  cursor: default;
+  border-radius: 4px;
+  transition: background 0.1s;
+}
+
+.tree-row.folder {
+  cursor: pointer;
+}
+
+.tree-row:hover {
+  background: var(--bg-hover);
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.tree-icon {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.tree-row.folder .tree-icon {
+  color: #4da6ff;
+}
+
+.tree-name {
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.tree-comment {
+  margin-left: 12px;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

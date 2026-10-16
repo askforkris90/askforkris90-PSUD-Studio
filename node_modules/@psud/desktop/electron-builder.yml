@@ -1,0 +1,40 @@
+appId: com.psud.studio
+productName: PSUD Studio
+copyright: Copyright © 2026 PSUD Studio Team
+
+directories:
+  output: release
+  buildResources: ../installer
+
+files:
+  - dist/**/*
+  - dist-electron/**/*
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: ../installer/icons/icon.ico
+
+mac:
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  icon: ../installer/icons/icon.icns
+  category: public.app-category.developer-tools
+
+linux:
+  target:
+    - AppImage
+    - deb
+  icon: ../installer/icons/icon.png
+  category: Development
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
